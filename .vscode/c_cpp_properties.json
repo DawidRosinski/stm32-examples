@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "name": "STM32F4",
+            "compilerPath": "C:/Program Files (x86)/GNU Arm Embedded Toolchain/10 2020-q4-major/bin/arm-none-eabi-gcc.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++20",
+            "intelliSenseMode": "gcc-arm",
+            "configurationProvider": "ms-vscode.cmake-tools",
+            "browse": {
+                "path": [
+                    "${env:STM32_FW_PATH}/STM32Cube_FW_F4_V1.26.1/",
+                    "${env:STM32_FW_PATH}/STM32Cube_FW_F4_V1.26.1/Drivers/STM32F4xx_HAL_Driver/Inc/*"
+                ]
+            }
+        }
+    ],
+    "version": 4
+}
