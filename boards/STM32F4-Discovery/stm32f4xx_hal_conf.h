@@ -35,9 +35,9 @@
 /**
   * @brief This is the list of modules to be used in the HAL driver
   */
-#define HAL_MODULE_ENABLED
+/* #define HAL_MODULE_ENABLED  */
 
-  /* #define HAL_CRYP_MODULE_ENABLED */
+/* #define HAL_CRYP_MODULE_ENABLED */
 /* #define HAL_ADC_MODULE_ENABLED */
 /* #define HAL_CAN_MODULE_ENABLED */
 /* #define HAL_CRC_MODULE_ENABLED */
@@ -81,13 +81,13 @@
 /* #define HAL_SPDIFRX_MODULE_ENABLED */
 /* #define HAL_DFSDM_MODULE_ENABLED */
 /* #define HAL_LPTIM_MODULE_ENABLED */
-#define HAL_GPIO_MODULE_ENABLED
-#define HAL_EXTI_MODULE_ENABLED
-#define HAL_DMA_MODULE_ENABLED
-#define HAL_RCC_MODULE_ENABLED
-#define HAL_FLASH_MODULE_ENABLED
-#define HAL_PWR_MODULE_ENABLED
-#define HAL_CORTEX_MODULE_ENABLED
+/* #define HAL_GPIO_MODULE_ENABLED */
+/* #define HAL_EXTI_MODULE_ENABLED */
+/* #define HAL_DMA_MODULE_ENABLED */
+/* #define HAL_RCC_MODULE_ENABLED */
+/* #define HAL_FLASH_MODULE_ENABLED */
+/* #define HAL_PWR_MODULE_ENABLED */
+/* #define HAL_CORTEX_MODULE_ENABLED */
 
 /* ########################## HSE/HSI Values adaptation ##################### */
 /**

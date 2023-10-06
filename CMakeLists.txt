@@ -10,6 +10,11 @@ set(CMAKE_CXX_STANDARD 20)
 include(stm32-cmake/cmake/mcu_options.cmake)
 stm32_fw_init(F4 1.26.1)
 
+add_subdirectory(boards/STM32F4-Discovery)
+
 add_subdirectory(blink)
 add_subdirectory(gpio)
 add_subdirectory(semihosting)
+add_subdirectory(uart)
+add_subdirectory(swv)
+add_subdirectory(spi)

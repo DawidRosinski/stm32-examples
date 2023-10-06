@@ -1,4 +1,4 @@
-set(TARGET_NAME gpio)
+set(TARGET_NAME swv)
 
 add_executable(${TARGET_NAME} ${TARGET_NAME}.c)
 

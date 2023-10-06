@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "OpenOCD Debug",
+            "name": "OpenOCD Launch",
             "cwd": "${workspaceFolder}",
             "executable": "${command:cmake.launchTargetPath}",
             "request": "launch",
@@ -27,7 +27,7 @@
             ],
         },
         {
-            "name": "JLink Debug",
+            "name": "JLink Launch",
             "cwd": "${workspaceFolder}",
             "executable": "${command:cmake.launchTargetPath}",
             "request": "launch",
@@ -51,6 +51,32 @@
                     }
                 ]
             }
+        },
+        {
+            "name": "STLink Launch",
+            "cwd": "${workspaceFolder}",
+            "executable": "${command:cmake.launchTargetPath}",
+            "request": "launch",
+            "type": "cortex-debug",
+            "runToEntryPoint": "main",
+            "servertype": "stlink",
+            "device": "STM32F407VG",
+            "interface": "swd",
+            "svdFile": "${workspaceFolder}/STM32F407.svd",
+            // "swoConfig": {
+            //     "enabled": true,
+            //     "cpuFrequency": 168000000,
+            //     "swoFrequency": 2000000,
+            //     "source": "probe",
+            //     "decoders": [
+            //         {
+            //             "label": "Output",
+            //             "type": "console",
+            //             "port": 0,
+            //             "encoding": "ascii"
+            //         }
+            //     ]
+            // }
         }
     ]
 }
