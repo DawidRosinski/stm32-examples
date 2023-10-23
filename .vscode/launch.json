@@ -34,23 +34,13 @@
             "type": "cortex-debug",
             "runToEntryPoint": "main",
             "servertype": "jlink",
-            "device": "STM32F407VG",
-            "interface": "swd",
-            "svdFile": "${workspaceFolder}/STM32F407.svd",
-            "swoConfig": {
-                "enabled": true,
-                "cpuFrequency": 168000000,
-                "swoFrequency": 2000000,
-                "source": "probe",
-                "decoders": [
-                    {
-                        "label": "Output",
-                        "type": "console",
-                        "port": 0,
-                        "encoding": "ascii"
-                    }
-                ]
-            }
+            "device": "STM32F417IG",
+            "interface": "jtag",
+            "svdFile": "${workspaceFolder}/boards/stm32f4-custom/STM32F41x.svd",
+            "serverArgs": [
+                "-gui"
+            ],
+            "rtos": "C:/Program Files (x86)/SEGGER/JLink/GDBServer/RTOSPlugin_FreeRTOS.dll"
         },
         {
             "name": "STLink Launch",
